@@ -1,4 +1,3 @@
-
 interface MessageProps {
   id: number;
   message: string;
@@ -6,8 +5,10 @@ interface MessageProps {
 
 const Message = ({ id, message }: MessageProps) => {
   return (
-    <p>{id} - {message}</p>
-  )
-}
+    <p>
+      <b>Message</b> - {message}
+    </p>
+  );
+};
 
-export default Message
+export default Message;
